@@ -1,0 +1,166 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+/* 🔍 Search bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#search-input {
+  padding: 8px 12px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+#search-button {
+  padding: 8px 14px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+#search-button:hover {
+  background-color: #1e8449;
+}
+
+/* 📂 Category buttons */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+nav button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background-color: #2980b9;
+}
+
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.news-card h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.news-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.news-card a {
+  margin-top: auto;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-card a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ecf0f1;
+  font-size: 14px;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark header {
+  background-color: #1f1f1f;
+}
+
+body.dark nav button,
+body.dark #search-button {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark nav button:hover,
+body.dark #search-button:hover {
+  background-color: #666;
+}
+
+body.dark .news-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+}
