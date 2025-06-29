@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily News</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🗞 Daily News</h1>
+    <button id="toggle-dark-mode">🌙 Toggle Dark Mode</button>
+
+
+    <!-- 🔍 Search bar -->
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search for news..." />
+      <button id="search-button">🔍 Search</button>
+    </div>
+
+    <!-- 📂 Category buttons -->
+    <nav>
+      <button data-category="general">General</button>
+      <button data-category="technology">Tech</button>
+      <button data-category="sports">Sports</button>
+      <button data-category="business">Business</button>
+      <button data-category="health">Health</button>
+      <button data-category="entertainment">Entertainment</button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="news-container"></div>
+  </main>
+
+  <footer>
+    <p>Powered by <a href="https://newsapi.org" target="_blank">NewsAPI.org</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
