@@ -1,4 +1,4 @@
-const apiKey = 'ad6c514dbf134750a5d13abb6aeae402'; // Replace with your actual API key
+const apiKey = 'dfd9670cabf340358de846adf0f3f112'; // Replace with your actual API key
 
 let currentCategory = 'general';
 
