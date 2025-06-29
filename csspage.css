@@ -5,7 +5,6 @@
   padding: 0;
 }
 
-/* News Website Theme */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to bottom, #fdfdfd, #eaeaea);
@@ -16,37 +15,39 @@ body {
   color: #111;
 }
 
-/* Header - News Banner Style */
 header {
   background-color: #c62828;
   color: white;
-  padding: 25px 20px;
+  padding: 20px;
   text-align: center;
-  border-bottom: 4px solid #b71c1c;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header h1 {
   font-size: 2rem;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .search-bar {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
   gap: 10px;
+  margin: 20px 0;
   flex-wrap: wrap;
 }
 
 #search-input {
-  padding: 10px 14px;
+  padding: 10px;
   width: 260px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  border: 1px solid #bbb;
-  font-size: 15px;
 }
 
 #search-button {
@@ -56,21 +57,18 @@ header h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 15px;
-  transition: background 0.3s;
 }
 
 #search-button:hover {
   background-color: #b71c1c;
 }
 
-/* Navigation for Categories */
 nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 nav button {
@@ -81,7 +79,6 @@ nav button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
-  transition: background 0.3s;
 }
 
 nav button:hover {
@@ -94,7 +91,6 @@ main {
   margin: auto;
 }
 
-/* News Articles Grid */
 #news-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -108,7 +104,6 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   transition: transform 0.2s ease;
 }
 
@@ -118,7 +113,6 @@ main {
 
 .news-card img {
   max-width: 100%;
-  height: auto;
   border-radius: 6px;
   margin-bottom: 12px;
 }
@@ -136,27 +130,25 @@ main {
 }
 
 .news-card a {
-  margin-top: auto;
   color: #1565c0;
   text-decoration: none;
   font-weight: bold;
+  margin-top: auto;
 }
 
 .news-card a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
   background-color: #eeeeee;
   font-size: 14px;
   color: #333;
-  border-top: 1px solid #ccc;
 }
 
-/* Dark Mode Support */
+/* Dark Mode */
 body.dark {
   background-color: #121212;
   color: #e0e0e0;
